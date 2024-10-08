@@ -4,21 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "swiftShell",
+    name: "SwiftShell",
     products: [
-        // Products define the executables and libraries a package produces, making them visible to other packages.
+        // A little package to enable calling shell commands from within a Swift CLI.
         .library(
-            name: "swiftShell",
-            targets: ["swiftShell"]),
+            name: "SwiftShell",
+            targets: ["SwiftShell"]),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "swiftShell"),
+            name: "SwiftShell"),
         .testTarget(
-            name: "swiftShellTests",
-            dependencies: ["swiftShell"]
+            name: "SwiftShellTests",
+            dependencies: ["SwiftShell"]
         ),
     ]
 )
